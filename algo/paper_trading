@@ -37,7 +37,7 @@ class Algo():
     
     def GetHistoricalData(self, contract, duration='1 D', bar_size='1 hour', whatToShow='MIDPOINT'):
         bars = self.client.reqHistoricalData(contract=contract, endDateTime='', durationStr=duration,
-                                    barSizeSetting=bar_size, whatToShow='MIDPOINT', useRTH=True)
+                                    barSizeSetting=bar_size, whatToShow=whatToShow, useRTH=True)
         return bars
     
     def BuildEMA(self, slow_period, fast_period):
@@ -134,22 +134,25 @@ def Main(client_id):
 
     contract1 = Future('NQ', '20240621', 'CME')
     contract2 = Future('ES', '20240621', 'CME')
+
     contract3 = Forex('EURUSD')
-    contract4= Crypto('BTC','PAXOS','USD')
+    contract4= Crypto('ETH','PAXOS','USD')
 
-    contract = contract1
+    contract = contract3
 
-    bars = algo.GetHistoricalData(contract, '2 D', '5 mins','TRADES')
+    bars = algo.GetHistoricalData(contract, '2 D', '5 mins','MIDPOINT')
     
     df = util.df(bars)
+
+    print(df)
     
     algo.SetPaperBalances()
     
-    df_MA =  algo.GetMovingAverages(df, 10, 30, True)
-    # df_DMI = algo.GetDMI(df)
+    # df_MA =  algo.GetMovingAverages(df, 10, 30, True)
+    df_DMI = algo.GetDMI(df)
     
-    algo.RunStrategy(df_MA)
-    # algo.RunDMI(df_DMI)
+    # algo.RunStrategy(df_MA)
+    algo.RunDMI(df_DMI)
     
     print('USD balance: {}'.format(algo.USD_balance))
     print('BTC balance: {}'.format(algo.BTC_balance))
