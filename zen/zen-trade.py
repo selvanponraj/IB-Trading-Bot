@@ -21,14 +21,20 @@ def write_log(message):
 # Function to write trade entries
 trade_directory = os.path.join(os.path.dirname(__file__), 'trade')
 os.makedirs(trade_directory, exist_ok=True)
-trade_filename = os.path.join(trade_directory, f"zen-trade-{datetime.now().strftime('%Y-%m-%d')}.csv")
+# trade_filename = os.path.join(trade_directory, f"zen-trade-{datetime.now().strftime('%Y-%m-%d')}.csv")
 # Write header to trade file if it doesn't exist or is empty
-if not os.path.isfile(trade_filename) or os.stat(trade_filename).st_size == 0:
-    with open(trade_filename, mode='w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(['Symbol', 'Trade Date', 'Purchase Price', 'Quantity', 'Commission'])
+# if not os.path.isfile(trade_filename) or os.stat(trade_filename).st_size == 0:
+#     with open(trade_filename, mode='w', newline='') as file:
+#         writer = csv.writer(file)
+#         writer.writerow(['Symbol', 'Trade Date', 'Purchase Price', 'Quantity', 'Commission'])
 
-def write_trade(ticker, trade_date, market_price, quantity, commission):
+def write_trade(ticker, trade_date, market_price, quantity, commission,csv_file):
+    trade_filename = os.path.join(trade_directory, f"{csv_file}-trade-{datetime.now().strftime('%Y-%m-%d')}.csv")
+
+    if not os.path.isfile(trade_filename):
+        with open(trade_filename, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(['Symbol', 'Trade Date', 'Purchase Price', 'Quantity', 'Commission'])
     with open(trade_filename, mode='a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow([ticker, trade_date, market_price, quantity, commission])
@@ -181,7 +187,7 @@ for csv_file in csv_files:
         ib.qualifyContracts(contract)
         
         # Calculate ATR and determine stop-loss price
-        data = fetch_5min_data(contract, duration='2 D')
+        # data = fetch_5min_data(contract, duration='2 D')
 
         # Calculate ATR for the 5-minute candles
         # data = calculate_atr(data, period=14)
@@ -204,7 +210,9 @@ for csv_file in csv_files:
             # Use the last price, or fallback to close price from historical data
             market_price = ticker_data.last if ticker_data.last else ticker_data.close
             if math.isnan(market_price):
-                market_price = 100
+                print("Market Price Not Available.... Skipping Order")
+                # continue
+                market_price=100
             market_price = round(market_price, 2)
             stop_loss_price = round(market_price - stop_loss,2)
             take_profit_price = round(market_price + take_profit,2)
@@ -248,7 +256,7 @@ for csv_file in csv_files:
             
             total_price = quantity * market_price
 
-            write_trade(ticker, yahoo_today, actual_filled_price, quantity, commission)
+            write_trade(ticker, yahoo_today, actual_filled_price, quantity, commission,csv_file.split('.')[0])
             write_log(f"Bracket Order placed for {ticker}: Quantity: {quantity}, Market Price: {market_price}, Filled Price: {actual_filled_price}, Stop-Loss: {stop_loss_price}, Take-Profit: {take_profit_price}, Total-Price: {total_price}")
             print(f"Bracket Order placed for {ticker}: Quantity: {quantity}, Market Price: {market_price}, Filled Price: {actual_filled_price}, Stop-Loss: {stop_loss_price}, Take-Profit: {take_profit_price}, Total-Price: {total_price}")
         else:
