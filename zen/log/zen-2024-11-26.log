@@ -1,0 +1,51 @@
+2024-11-26 15:30:38 - ----------------------------------------------------------------------------------------
+2024-11-26 15:33:23 - zen-pullback.csv : ['APP', 'PLTR', 'VST'] @ 2024-11-26 15:33
+2024-11-26 15:33:33 - Bracket Order placed for APP: Quantity: 1, Market Price: 333.0, Filled Price: 334.49, Stop-Loss: 297.36, Take-Profit: 404.27
+2024-11-26 15:33:42 - Bracket Order placed for PLTR: Quantity: 9, Market Price: 65.28, Filled Price: 64.72, Stop-Loss: 59.97, Take-Profit: 75.9
+2024-11-26 15:33:50 - Bracket Order placed for VST: Quantity: 3, Market Price: 160.64, Filled Price: 159.75, Stop-Loss: 146.62, Take-Profit: 188.68
+2024-11-26 15:33:52 - zen-readytotrend.csv : ['ROST'] @ 2024-11-26 15:33
+2024-11-26 15:34:01 - Bracket Order placed for ROST: Quantity: 7, Market Price: 154.26, Filled Price: 154.4, Stop-Loss: 148.0, Take-Profit: 166.79
+2024-11-26 15:34:03 - zen-flags.csv : [] @ 2024-11-26 15:34
+2024-11-26 15:34:05 - zen-trendingnow.csv : ['TSLA'] @ 2024-11-26 15:34
+2024-11-26 15:34:14 - Bracket Order placed for TSLA: Quantity: 1, Market Price: 345.87, Filled Price: 346.15, Stop-Loss: 314.69, Take-Profit: 408.24
+2024-11-26 15:34:14 - ----------------------------------------------------------------------------------------
+2024-11-26 15:51:26 - zen-pullback.csv : ['AI', 'COIN', 'GME', 'MARA', 'RKLB'] @ 2024-11-26 15:51
+2024-11-26 15:51:35 - Bracket Order placed for AI: Quantity: 15, Market Price: 37.57, Filled Price: 37.69, Stop-Loss: 34.27, Take-Profit: 44.17
+2024-11-26 15:51:44 - Bracket Order placed for COIN: Quantity: 1, Market Price: 301.5, Filled Price: 302.8, Stop-Loss: 257.37, Take-Profit: 389.76
+2024-11-26 15:51:52 - Bracket Order placed for GME: Quantity: 16, Market Price: 30.86, Filled Price: 30.59, Stop-Loss: 27.82, Take-Profit: 36.93
+2024-11-26 15:52:01 - Bracket Order placed for MARA: Quantity: 11, Market Price: 25.87, Filled Price: 26.35, Stop-Loss: 21.46, Take-Profit: 34.7
+2024-11-26 15:52:10 - Bracket Order placed for RKLB: Quantity: 14, Market Price: 26.16, Filled Price: 26.01, Stop-Loss: 22.7, Take-Profit: 33.09
+2024-11-26 15:52:12 - zen-readytotrend.csv : [] @ 2024-11-26 15:52
+2024-11-26 15:52:14 - zen-flags.csv : [] @ 2024-11-26 15:52
+2024-11-26 15:52:16 - zen-trendingnow.csv : [] @ 2024-11-26 15:52
+2024-11-26 15:52:16 - ----------------------------------------------------------------------------------------
+2024-11-26 16:41:08 - zen-pullback.csv : [] @ 2024-11-26 16:41
+2024-11-26 16:41:10 - zen-readytotrend.csv : [] @ 2024-11-26 16:41
+2024-11-26 16:41:12 - zen-flags.csv : ['ADBE', 'MCO', 'BKNG'] @ 2024-11-26 16:41
+2024-11-26 16:41:21 - Bracket Order placed for ADBE: Quantity: 3, Market Price: 520.45, Filled Price: None, Stop-Loss: 506.48, Take-Profit: 534.42, Total-Price: 0
+2024-11-26 16:41:30 - Bracket Order placed for MCO: Quantity: 6, Market Price: 496.49, Filled Price: None, Stop-Loss: 488.7, Take-Profit: 504.28, Total-Price: 0
+2024-11-26 16:41:39 - Bracket Order placed for BKNG: Quantity: 0, Market Price: 5158.0, Filled Price: None, Stop-Loss: 5065.55, Take-Profit: 5250.45, Total-Price: 0
+2024-11-26 16:41:41 - zen-trendingnow.csv : [] @ 2024-11-26 16:41
+2024-11-26 16:41:41 - ----------------------------------------------------------------------------------------
+2024-11-26 16:48:02 - zen-pullback.csv : [] @ 2024-11-26 16:48
+2024-11-26 16:48:04 - zen-readytotrend.csv : [] @ 2024-11-26 16:48
+2024-11-26 16:48:06 - zen-flags.csv : ['ADBE', 'MCO', 'BKNG'] @ 2024-11-26 16:48
+2024-11-26 16:48:14 - Bracket Order placed for ADBE: Quantity: 3, Market Price: 520.22, Filled Price: None, Stop-Loss: 506.25, Take-Profit: 534.19, Total-Price: 1560.66
+2024-11-26 16:48:23 - Bracket Order placed for MCO: Quantity: 6, Market Price: 496.69, Filled Price: None, Stop-Loss: 488.88, Take-Profit: 504.5, Total-Price: 2980.14
+2024-11-26 16:48:28 - zen-trendingnow.csv : [] @ 2024-11-26 16:48
+2024-11-26 16:48:28 - ----------------------------------------------------------------------------------------
+2024-11-26 16:49:37 - zen-pullback.csv : [] @ 2024-11-26 16:49
+2024-11-26 16:49:39 - zen-readytotrend.csv : [] @ 2024-11-26 16:49
+2024-11-26 16:49:41 - zen-flags.csv : ['ADBE', 'MCO', 'BKNG'] @ 2024-11-26 16:49
+2024-11-26 16:49:50 - Bracket Order placed for ADBE: Quantity: 3, Market Price: 520.15, Filled Price: None, Stop-Loss: 506.18, Take-Profit: 548.09, Total-Price: 1560.4499999999998
+2024-11-26 16:49:59 - Bracket Order placed for MCO: Quantity: 6, Market Price: 496.69, Filled Price: None, Stop-Loss: 488.88, Take-Profit: 512.3, Total-Price: 2980.14
+2024-11-26 16:50:03 - zen-trendingnow.csv : [] @ 2024-11-26 16:50
+2024-11-26 16:50:03 - ----------------------------------------------------------------------------------------
+2024-11-26 16:53:03 - zen-pullback.csv : [] @ 2024-11-26 16:53
+2024-11-26 16:53:05 - zen-readytotrend.csv : [] @ 2024-11-26 16:53
+2024-11-26 16:53:07 - zen-flags.csv : ['ADBE', 'MCO', 'BKNG'] @ 2024-11-26 16:53
+2024-11-26 16:53:16 - Bracket Order placed for ADBE: Quantity: 7, Market Price: 520.74, Filled Price: None, Stop-Loss: 506.77, Take-Profit: 548.68, Total-Price: 3645.1800000000003
+2024-11-26 16:53:25 - Bracket Order placed for MCO: Quantity: 12, Market Price: 497.24, Filled Price: None, Stop-Loss: 489.4, Take-Profit: 512.92, Total-Price: 5966.88
+2024-11-26 16:53:33 - Bracket Order placed for BKNG: Quantity: 1, Market Price: 5158.0, Filled Price: None, Stop-Loss: 5065.55, Take-Profit: 5342.91, Total-Price: 5158.0
+2024-11-26 16:53:35 - zen-trendingnow.csv : [] @ 2024-11-26 16:53
+2024-11-26 16:53:35 - ----------------------------------------------------------------------------------------
