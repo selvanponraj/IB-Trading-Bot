@@ -2,7 +2,5 @@ requests
 bs4
 pyyaml
 pytickersymbols
-ibapi
-traceback
-threading
-
+ib_insync
+pandas
